@@ -13,6 +13,12 @@ export const ContactsPage = ({contacts, addContact}) => {
   Define state variables for 
   contact info and duplicate check
   */
+  
+  useEffect(() => {
+    if( contacts.indexOf(name) === -1){
+      setDuplicate(true);
+    }
+  }); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
