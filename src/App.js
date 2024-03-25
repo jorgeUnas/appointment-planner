@@ -13,10 +13,9 @@ function App() {
   Implement functions to add data to
   contacts and appointments
   */
-  const addContact = (name, phone, number, email) => { 
+  const addContact = (name, phone, email) => { 
     let contact = {name: name,
                 phone: phone,
-                number: number,
                 email: email}
     setContacts((prev) => {
         [...prev, contact]
