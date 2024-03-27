@@ -12,9 +12,9 @@ export const ContactForm = ({
   return (
     <>
     <form onSubmit={handleSubmit} >
-    <input id="name" type="text" value={name} onChange={() => setName(e.target.value)} />
-    <input id="phone" type="tel" value={phone} onChange={() => setPhone(e.target.value)} />
-    <input id="email" type="email" value={email} onChange={() => setEmail(e.target.value)} />
+    <input id="name" type="text" value={name} onChange={({target}) => setName(target.value)} />
+    <input id="phone" type="tel" value={phone} onChange={({target}) => setPhone(target.value)} />
+    <input id="email" type="email" value={email} onChange={({target}) => setEmail(target.value)} />
     <input type="submit" />
     </form>
     </>
