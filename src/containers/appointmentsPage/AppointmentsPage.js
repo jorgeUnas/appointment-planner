@@ -47,6 +47,7 @@ export const AppointmentsPage = ({appointments, addAppointment, contacts}) => {
       <hr />
       <section>
         <h2>Appointments</h2>
+        <TileList tiles={appointments} />
       </section>
     </div>
   );
